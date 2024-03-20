@@ -1,3 +1,6 @@
+group 'com.sameer.flutterstatusbarcolor.flutterstatusbarcolor'
+version '1.0-SNAPSHOT'
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -9,6 +12,12 @@ android {
     namespace 'com.sameer.flutterstatusbarcolor.flutterstatusbarcolor'
     compileSdk flutter.compileSdkVersion
 
+     packagingOptions {
+        jniLibs {
+            useLegacyPackaging = false
+        }
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -19,6 +28,7 @@ android {
     /* lintOptions {
         disable 'InvalidPackage'
     } */
+    
 }
 
 ext {
