@@ -1,17 +1,8 @@
 # Changelog
 
-## [0.6.0]
-
-* Migrated to new build.gradle and settings.gradle declarations - Flutter 3.16 ->
-* Added namespace to app/build.gradle - APG 7 ->
-* APG 8.1.1
-* compieSdk flutter.compileSdkVersion equals 34
-* Kotlin 1.8.10
-
 ## [0.5.0]
 
 * Bump Android SDK and Kotlin version
-
 ## [0.4.0]
 
 * Migrate Android v2 Embedding
