@@ -1,0 +1,30 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+
+android {
+    namespace 'com.sameer.flutterstatusbarcolor.flutterstatusbarcolor'
+    compileSdk flutter.compileSdkVersion
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdk 16
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+ext {
+    kotlinStdlibVersion = '1.9.23'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinStdlibVersion"
+}
