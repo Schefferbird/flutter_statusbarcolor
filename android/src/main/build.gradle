@@ -13,16 +13,16 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdk 16
+        minSdk flutter.minSdkVersion
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    lintOptions {
+    /* lintOptions {
         disable 'InvalidPackage'
-    }
+    } */
 }
 
 ext {
-    kotlinStdlibVersion = '1.9.23'
+    kotlinStdlibVersion = '1.8.10'
 }
 
 dependencies {

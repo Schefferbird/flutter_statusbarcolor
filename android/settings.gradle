@@ -25,5 +25,3 @@ plugins {
 
 include ":app"
 
-
-rootProject.name = 'flutter_statusbarcolor_ns'
